@@ -8,15 +8,9 @@ Na segunda parte foi adicionado um resumo sobre dois principais personagens que 
 Na terceira e ultima parte foi adicionado uma imagem apresentando a cronologia do STAR WARS
 No header da index.html pode-se acessar a página GALERIA.
 
-A pagina galeria é a pagina que está consumindo a api de star wars, nela você pode ir no card que aparece no meio da tela, selecionar qual personagem você quer receber as informações e quando selecionado a api vai retornar em tempo real as informações 
+A pagina galeria é a pagina que está consumindo a api de star wars, nela você pode ir no card que aparece no meio da tela, selecionar ou digitar qual personagem você quer receber as informações e quando realizado a api vai retornar em tempo real as informações 
 
 COMO FOI A LÓGICA?
-Teve que adicionar uma função async para que possa usar o await, essa função assim que 
-a página é carregada ela consome a api, e como geralmente o fetch com await demora
-eu coloquei um loading pra ficar rodando antes do fetch, e depois do fetch removi o loading e exibi o card(que por padrão estava display: none; para que só fosse exibido dps que o fetch fosse carregado, usando display: flex;.)
-Depois que o card aparece ele fica estático, então eu criei uma função que é acionada pelo evento onchange,
-(aciona quando o usuário muda o select para algum personagem) sempre que essa função é acionada ela pega o valor
-do atual option que é de 0 adiante, facilitando a busca de dados da api pelo índice e então se o value for 0
-ele vai pegar o primeiro indice de results e exibir todas as características conforme digitado.
+Teve que ser adicionado uma função async para que possa usar o await, essa função é acionada assim que o usuario enviar o input ou alternar o selected(eventos onchange e onclick), enviando como parâmetro o valor do texto e input. Esses valores que são enviados como parâmetro foi usado no fetch da api para buscar o personagem de acordo com os valores digitados, e como geralmente o fetch com await demora foi colocado um loading pra ficar rodando antes do fetch, e depois do fetch ser realizado o loading é removido com display none e as informações do personagem são adicionadas 'https://swapi.dev/api/people/?search='+opcao. pelo ?search=personagem, caso o valor do usuario seja digitado errado a api retorna o personagem mais proximo. 
 
 
