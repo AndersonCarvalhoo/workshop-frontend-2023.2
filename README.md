@@ -1,6 +1,7 @@
 # workshop-frontend-2023.2
 Deploy: https://starwars.anderson444.repl.co/
 Este projeto foi baseado em STAR WARS 
+
 A pagina index.html é a pagina de Curiosidades sobre star wars. Na primeira parte da pagina foi adicionado
 um trailer via iframe que pode ser assistido e ao lado do iframe um pequeno resumo sobre o que é STAR WARS.
 Na segunda parte foi adicionado um resumo sobre dois principais personagens que é o YODA e DARTH VADER.
