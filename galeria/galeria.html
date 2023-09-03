@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../cabecalho.css">
-    <link rel="shortcut icon" href="images/babyIoda.png" type="image/x-icon">
+    <link rel="shortcut icon" href="" type="image/x-icon">
     <title>Galeria - STAR WARS</title>
 </head>
 <body>
@@ -21,29 +21,29 @@
         </div>
     </header>
     <section>
-        <img id="load" src="images/loading-bar.gif" alt="" width="150px">
         <div id="card" class="card">
-            <img class="ioda" src="images/babyIoda.png" alt="" width="150px">
+            <img class="ioda" src="images/babyIoda.png" alt="">
             <img class="logo-card" src="images/Star_Wars_Logo-removebg-preview.png" alt="" width="400px">
             <div id="escolha">
-            <form action="">
-                <select name="nomes_personagens" id="nomes_personagens" onchange="getPersonagem()">
-                    <option value="default" disabled selected>Selecione o personagem</option>
-                    <option value="0">Luke Skywalker</option>
-                    <option value="1">C-3PO</option>
-                    <option value="2">R2-D2</option>
-                    <option value="3">Darth Vader</option>
-                    <option value="4">Leia Organa</option>
-                    <option value="5">Owen Lars</option>
-                    <option value="6">Beru Whitesun lars</option>
-                    <option value="7">R5-D4</option>
-                    <option value="8">Biggs Darklighter</option>
-                    <option value="9">Obi-Wan Kenobi</option>
+            <div>
+                <input class="texto" type="text" name="nomes_personagens" id="nomes_personagens" placeholder="Digite seu personagem">
+                <button class="botao" onclick="getPersonagemInput()">Buscar</button>
+                <p>ou</p>
+            </div>
+                <select name="" id="selecionar_personagens" onchange="getPersonagemSelected()">
+                    <option value="" disabled selected style="color: gray; margin-top:5px ;">Principais Personagens</option>
+                    <option value="darth">Darth Vader</option>
+                    <option value="yoda">Yoda</option>
+                    <option value="sky">Luke SkyWalker</option>
+                    <option value="Chewbacca">Chewbacca</option>
+                    <option value="leia">Leia Organa</option>
                 </select>
-            </form>
+
+            </div>
+            <div id="load">
+                <img id="loading" src="images/loading-bar.gif" alt="tela de loading" width="150px">
             </div>
             <div id="caracteristicas">
-
             </div>
         </div>
     </section>
