@@ -1,0 +1,27 @@
+header {
+    height: 15vh;
+    border-bottom: 1px solid gray;
+    background-color: rgb(17,17,17);
+}
+header .element-1-header img {
+    height: 15vh;
+}
+.container-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.container-header .element-2-header {
+    display: flex;
+    gap: 25px;
+
+}
+.container-header .element-2-header a {
+    text-decoration: none;
+    color: yellow;
+    font-size: 20px;
+}
+.container-header .element-2-header a:hover {
+    transition: 0.7s;
+    border-bottom: 1px solid rgb(255, 255, 0, 0.5);
+}

@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@300;400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-color: rgb(17, 17, 17) ;
+}
+.primeira-secao {
+    width: 100%;
+    height: 85vh;
+}
+.elementos-section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.sinopse-section {
+    width: 40%;
+}
+.sinopse-section h2 {
+    text-align: center;
+    color: yellow;
+}
+.sinopse-section p {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+}
+main {
+    height: 800px;
+    display: flex;
+    justify-content: center;
+}
+.elementos-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+}
+.elementos-main h2 {
+    margin-top: 50px;
+    color: yellow;
+    font-size: 34px;
+}
+.elementos-main p {
+    color: white;
+    font-size: 20px;
+}
+.terceira-secao {
+    display: flex;
+    justify-content: center;
+}
+.title-personagens {
+    text-align: center;
+    color: yellow;
+    margin-bottom: 30px;
+    font-size: 34px;
+}
+.terceira-secao-elementos {
+    width: 1050px;
+    display: flex;
+    flex-direction: column;
+}
+.container-darth {
+    align-self: flex-start;
+    width: 500px;
+    text-align: center;
+}
+.container-heroi {
+    align-self: flex-end;
+    width: 500px;
+    text-align: center;
+}
+.container-darth img {
+    width: 80px;
+}
+.container-heroi img {
+    width: 80px;
+}
+.container-darth h2 {
+    color: yellow;
+}
+.container-heroi h2 {
+    color: yellow;
+}
+.container-darth,.container-heroi h3,p {
+    color: white;
+}
